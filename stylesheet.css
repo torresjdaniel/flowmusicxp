@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Config general */
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #ffffff;  
+    background-color: #171817;
+}
+
+h1, h2, h3, a{
+	font-family: 'Roboto', sans-serif;
+}
+p, li, td, input{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/* Links */
+
+a {
+    color: #64e3b8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #64e3b8;
+}
+
+/* Header */
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header ul{
+    list-style-type: none;
+}
+
+/* Nav */
+
+.navRedes{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navRedes ul{
+    display: flex;
+}
+
+.navRedes a{
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.navPag{
+    order: 2;
+    display: flex;
+    align-items: center;
+   }
+
+.navPag ul{
+    display: flex;
+}   
+
+
+.navPag a{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.pagLi {
+    border-left: 2px solid #ffffff;
+}
+
+/* Sub Menu */
+
+.navRedes2, .navPag2{
+    display: none;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.navRedes2 p, .navPag2 p{
+    text-align: center;
+    color: #62e2b7;
+    padding-top: 12%;
+}
+
+.subRedes, .subPag{
+    margin: 0 auto;
+    z-index: 10000;
+    background-color: #171817;
+    position: absolute;
+    display: none;
+}
+
+.navRedes2:hover .subRedes{
+    display: inline-block;
+}
+
+.navPag2:hover .subPag{
+    display: inline-block;
+}
+
+.subLink {
+    padding: 1rem;
+}
+
+.subRedes{
+    transform: translate(-3rem);
+}
+.subPag{
+    transform: translate(-5rem);
+}
+/* Titulo h1 */
+
+.mainTitulo {
+    max-width: 80%;
+    padding: 0 30px;
+    margin: 2rem auto;
+}
+
+.mainTitulo h1, .tituloBanner{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+
+/* Footer*/
+
+footer{
+    border-top: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+
+}
+
+footer p{
+    text-decoration: underline;
+}
+
+.sectionNews{
+    margin: 1rem;
+    max-width: 73%;
+    font-size: 1.2rem;
+}
+
+.sectionNews h2{
+    text-align: center;
+}
+
+.sectionNews form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.newsPrimera{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsSegunda{
+    max-width: 30%;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Diseño Index */
+
+.banner{
+    margin: 2rem auto;
+}
+
+.tituloBanner{
+    margin-bottom: 4rem;
+}
+
+.h2Index{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.bordeP p{
+    border: 1px solid #64e3b8;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+/* Diseño SHOWS  */
+
+.grillaShows{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.entradaGrilla{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff;
+}
+
+.entradaGrilla h2, .entradaGrilla p, .entradaGrilla a{
+    width: 25%;
+    padding: 2rem;
+}
+
+/* Grilla LineUp */
+
+
+.galeria {
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria .artista a{
+    margin: 1rem;
+
+}
+
+
+.galeria .artista p{
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Diseño Beneficios */
+
+.grillaBeneficios {
+    max-width: 75%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.entradaBeneficio {
+    padding: 2rem;
+    margin: 0 auto;
+    border: 2px solid #64e3b8;
+    border-radius: 1rem;
+
+}
+
+.entradaBeneficio h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+/* Diseño Sorteos */
+
+.grillaSorteos {
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grillaSorteos h2{
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.entradaSorteo h3{
+    font-size: 1.5rem;
+}
+
+.entradaSorteo p, .entradaSorteo li{
+    font-size: 1.5rem;
+}
+
+.entradaSorteo ol{
+    padding-left: 1.5rem;
+}
+
+.entradaSorteo{
+    max-width: 18%;
+    padding: 2rem;
+    border: 2px solid #64e3b8;
+    border-radius: 0.8rem;
+}
+
+.datosSorteo{
+    line-height: 1.8rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+}
+
+.datosSorteo h3{
+    margin: 1rem 0;
+}
+
+/* Pagina 404 */
+
+.section404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    width: 100%;
+    font-size: 2rem;
+}
+
+.section404 h1{
+    margin: 1rem auto;
+}
+
+.section404 p{
+    margin: 0.25rem auto;
+}
+ 
+
+@media (max-width: 992px){
+
+	.galeria{
+		grid-template-columns: 1fr 1fr;
+	}
+
+    .grillaShows{
+        grid-template-rows: 1fr;
+    }
+
+    .grillaBeneficios{
+        max-width: 100%;
+    }
+
+    .entradaSorteo{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .navRedes2{
+        display: inline-block;
+        transform: translate(1rem, -0.2rem);
+        z-index: 10000;
+    }
+
+    .navRedes{
+        display: none;
+    }
+
+    header {
+        justify-content: space-evenly;
+       
+    }
+
+    .newsSegunda{
+        max-width: 50%;
+    }
+
+    .section404 {
+        font-size: 1.8rem;
+    }
+    
+
+}
+@media (max-width: 768px){
+    .mainTitulo-beneficios{
+        max-width: 90%;
+    }
+    .mainTitulo h1, .tituloBanner{
+        font-size: 2rem;
+    }
+
+    .bordeP p, footer{
+        font-size: 1.5rem;
+    }
+
+	.galeria{
+		grid-template-columns: 1fr;
+	}
+
+    .grillaShows{
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+
+    .entradaGrilla{
+        flex-direction: column;
+    }
+
+    .entradaGrilla h2, .entradaGrilla p, .entradaGrilla a{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .grillaBeneficios{
+        grid-template-columns: 1fr;
+    }
+
+    .navPag2{
+        display: inline-block;
+        transform: translate(0, -0.1rem);
+        z-index: 10000;
+    }
+
+    .navPag{
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+       
+    }
+
+    .newsSegunda{
+        max-width: 100%;
+    }
+
+    .h2Index, .sectionNews h2, .entradaGrilla h2,
+    .entradaBeneficio h2, .entradaSorteo h2{
+       font-size: 1.7rem;
+   }
+
+   .section404 {
+    font-size: 1.6rem;
+}
+}
+
+
+
+/* Efectos y Animaciones  */
+
+
+ .artista:hover{
+    transform: scale(1.5);
+    transition: all 700ms ease-in-out, all 500ms ease-in-out;
+    transition-delay: 125ms;
+    background-color: #171817;
+
+}
+
+.grillaBeneficios article:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+    background-color: #171817;
+}
+
+.entradaSorteo:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+    background-color: #171817;
+}
+
+.banner{
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
