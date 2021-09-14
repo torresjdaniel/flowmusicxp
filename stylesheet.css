@@ -58,12 +58,6 @@ header ul{
 
 /* Nav */
 
-.navRedes{
-    display: flex;
-    align-items: center;
-    
-}
-
 .navRedes ul{
     display: flex;
 }
