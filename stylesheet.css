@@ -191,13 +191,29 @@ footer p{
 }
 
 .newsSegunda{
-    max-width: 30%;
+    max-width: 50%;
     margin: 0.5rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
+.newsDatos{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.terminosLabel{
+    transform: translate(-1.5rem);
+}
+
+.terminosCheck{
+    transform: translate(-1rem,0.2rem);
+}
+
+.submit{
+    transform: translate(-2rem,-0.2rem);
+}
 
 /* Diseño Index */
 
@@ -437,7 +453,7 @@ footer p{
     .navPag2{
         display: inline-block;
         transform: translate(0, -0.1rem);
-        z-index: 10000;
+        z-index: 2;
     }
 
     .navPag{
@@ -461,6 +477,7 @@ footer p{
    .section404 {
     font-size: 1.6rem;
 }
+
 }
 
 
