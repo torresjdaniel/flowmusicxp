@@ -189,7 +189,7 @@ footer p{
 
 .newsSegunda{
     max-width: 50%;
-    margin: 0.5rem 0;
+    margin-left: 1rem;
     display: flex;
     justify-content: space-around;
 }
@@ -425,6 +425,10 @@ input, select{
     .newsPrimera, .newsSegunda{
         max-width: 100%;
         flex-direction: column;
+    }
+
+    .newsSegunda{
+        margin: 0;
     }
 
     .terminos{
