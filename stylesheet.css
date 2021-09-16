@@ -277,6 +277,12 @@ footer p{
     text-decoration: underline;
 }
 
+.iconoBeneficio{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
 /* Diseño Sorteos */
 
 .grillaSorteos {
