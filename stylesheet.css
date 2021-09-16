@@ -125,8 +125,13 @@ header ul{
 }
 
 .subLinkRedes{
-    font-size: 2.5rem;
     text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subLink2{
+    margin: 0;
 }
 
 .subPag{
