@@ -220,6 +220,7 @@ input, select{
 }
 
 .submit{
+    margin: 1rem auto;
     padding: 0.5rem;
     background-color: #171817;
     color: #ffffff;

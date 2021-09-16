@@ -113,19 +113,19 @@
             <h2>¡Suscribite a nuestro Newsletter!</h2>
             <form action="#">
                 <div class="newsPrimera">
-                    <div>
+                    <div class="newsDatos">
                         <label for="nombre">Nombre: </label>
                         <input type="text" name="nombre" placeholder="Tu nombre" required />
                     </div>
-                    <div>
+                    <div class="newsDatos">
                         <label for="mail">Email: </label>
                         <input type="email" name="mail" placeholder="mail@ejemplo.com" required />
                     </div>
-                    <div>
+                    <div class="newsDatos">
                         <label for="cumple">Fecha de tu cumpleaños:  </label>
                         <input type="date" name="cumple" />
                     </div>
-                    <div>
+                    <div class="newsDatos">
                         <label for="opciones">¿Qué genero escuchas más?</label>
                         <select name="opciones" required>
                             <option value="0">¡De Todo!</option>
@@ -141,10 +141,8 @@
                         <label class="terminosLabel" for="terminos">Acepto <a href="#">terminos y condiciones</a></label> <!-- Acá te redireccionaría a la página de temrinos y condiciones de la página -->
                         <input class="terminosCheck" type="checkbox" name="terminos" value="1" required />
                     </div>
-                    <div>
-                        <input type="submit" value="Suscribirse" />
-                    </div>
-                </div>   
+                    <input class="submit" type="submit" value="Suscribirse" />
+                </div>  
             </form>
         </div>     
     </footer>
