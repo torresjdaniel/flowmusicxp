@@ -484,7 +484,7 @@ input, select{
     .navRedes2{
         display: inline-block;
         transform: translate(1rem, -0.2rem);
-        z-index: 2;
+        z-index: 3;
     }
 
     .navRedes{
