@@ -138,7 +138,7 @@ header ul{
 
 .mainTitulo {
     max-width: 80%;
-    padding: 0 30px;
+    padding: 0 1rem;
     margin: 2rem auto;
 }
 
@@ -275,18 +275,20 @@ input, select{
 .galeria {
     margin: 5rem auto;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.galeria .artista a{
-    margin: 1rem;
-
+.galeria .artista p{
+    margin-top: 1rem;
+    text-align: center;
 }
 
 
-.galeria .artista p{
-    margin: 1rem;
-    text-align: center;
+.artista img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* Diseño Beneficios */
@@ -384,12 +386,87 @@ input, select{
     margin: 0.25rem auto;
 }
  
+/* Efectos y Animaciones  */
+
+
+.artista:hover{
+    transform: scale(1.4);
+    transition: all 700ms ease-in-out, all 500ms ease-in-out;
+    transition-delay: 125ms;
+    border: 2px solid #64e3b8;
+    background-color: #171817;
+}
+
+.grillaBeneficios article:hover{
+    transform: rotateY(360deg);
+    transition: transform 1s ease;
+    background-color: #171817;
+}
+
+.entradaSorteo:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease;
+    background-color: #171817;
+    box-shadow: 0 1rem 0.5rem 1.2rem #13221e;
+}
+
+.banner{
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Media query */
+
+@media (min-height: 1300px){ /* Height de Ipad Pro */
+    footer{
+        position: fixed;
+        bottom: 25px;
+    }
+
+    .mainTituloEspecial, .tituloBanner{
+
+        margin: 10rem auto 5rem auto;
+    }
+
+     .grillaBeneficios, .grillaSorteos, .grillaShows {
+        margin-top: 15rem;
+    }
+
+    .h2Index{
+        margin: 5rem auto 5rem auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
 
 @media (max-width: 992px){
 
 	.galeria{
 		grid-template-columns: 1fr 1fr;
 	}
+
+
+    .artista:hover{
+        transform: scale(1.2);
+        transition: all 700ms ease-in-out, all 500ms ease-in-out;
+        transition-delay: 125ms;
+        border: 2px solid #64e3b8;
+        background-color: #171817;
+    }
 
     .grillaShows{
         grid-template-rows: 1fr;
@@ -407,7 +484,7 @@ input, select{
     .navRedes2{
         display: inline-block;
         transform: translate(1rem, -0.2rem);
-        z-index: 10000;
+        z-index: 2;
     }
 
     .navRedes{
@@ -443,6 +520,7 @@ input, select{
     
 
 }
+
 @media (max-width: 768px){
     .mainTitulo-beneficios{
         max-width: 90%;
@@ -459,6 +537,14 @@ input, select{
 		grid-template-columns: 1fr;
 	}
 
+    .artista:hover{
+        transform: scale(1.05);
+        transition: all 700ms ease-in-out, all 500ms ease-in-out;
+        transition-delay: 125ms;
+        border: 2px solid #64e3b8;
+        background-color: #171817;
+    }
+    
     .grillaShows{
         grid-template-rows: 1fr;
         gap: 1rem;
@@ -506,39 +592,4 @@ input, select{
 
 
 
-/* Efectos y Animaciones  */
 
-
- .artista:hover{
-    transform: scale(1.5);
-    transition: all 700ms ease-in-out, all 500ms ease-in-out;
-    transition-delay: 125ms;
-    background-color: #171817;
-
-}
-
-.grillaBeneficios article:hover{
-    transform: rotateY(360deg);
-    transition: transform 1s ease;
-    background-color: #171817;
-}
-
-.entradaSorteo:hover{
-    transform: scale(1.1);
-    transition: transform 1s ease;
-    background-color: #171817;
-}
-
-.banner{
-    animation-duration: 4s;
-    animation-name: aparecer;
-}
-
-@keyframes aparecer{
-    0% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
