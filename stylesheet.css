@@ -17,7 +17,7 @@ body{
     background-color: #171817;
 }
 
-h1, h2, h3, a, p, li, td, input, label, select{
+h1, h2, h3, a, p, li, td, input, label, select, button{
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -31,7 +31,7 @@ h2{
 
 /* Links */
 
-a {
+a, button {
     color: #64e3b8;
     text-decoration: none;
 }
@@ -225,8 +225,34 @@ input, select{
     background-color: #171817;
     color: #ffffff;
     border: 2px solid #64e3b8;
-    border-radius: 1.3rem;
+    border-radius: 1.4rem;
 }
+
+.modalTerminos{
+    background-color: #171817;
+    border: 1px solid #64e3b8;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.modalTerminosContenido{
+    border: none;
+}
+
+.modal-body p{
+    text-decoration: none;
+}
+
+.modal-body article h4{
+    text-align: center;
+}
+
+.modalCerrar{
+    background-color: #171817;
+    border: 2px solid #64e3b8;
+    border-radius: 1.4rem;
+}
+
 
 /* Diseño Index */
 
@@ -410,6 +436,15 @@ input, select{
     box-shadow: 0 1rem 0.5rem 1.2rem #13221e;
 }
 
+.submit:hover, .modalCerrar:hover{
+    background-color: none;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    background-color: #171817;
+    border-color: #64e3b8;
+    box-shadow: 0 0rem 1rem 1rem #13221e;
+}
+
 .banner{
     animation-duration: 4s;
     animation-name: aparecer;
@@ -589,7 +624,6 @@ input, select{
 }
 
 }
-
 
 
 

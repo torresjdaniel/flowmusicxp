@@ -174,13 +174,45 @@
                 </div>
                 <div class="newsSegunda">
                     <div class="terminos">
-                        <label class="terminosLabel" for="terminos">Acepto <a href="#">terminos y condiciones</a></label> <!-- Acá te redireccionaría a la página de temrinos y condiciones de la página -->
+                        <label class="terminosLabel" for="terminos">Acepto 
+                            <a data-bs-toggle="modal" href="#exampleModal">
+                                terminos y condiciones
+                            </a>
+                        </label> 
                         <input class="terminosCheck" type="checkbox" name="terminos" value="1" required />
                     </div>
                     <input class="submit" type="submit" value="Suscribirse" />
                 </div>  
             </form>
-        </div>     
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modalTerminos">
+              <div class="modal-content modalTerminosContenido modalTerminos">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Condiciones de suscripción al Newsletter</h3>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <h4>GENERALIDADES</h4>
+                        <p>
+                            Los presentes términos y condiciones constituyen las normas por las cuales se rige todo lo relacionado con el manejo de datos suministrados por el usuario al momento de inscribirse en www.flowmusicxp.com.ar, con el fin de recibir el newsletter Flow Music XP.
+                            Con la mera utilización del sitio se atribuye la condición de usuario de www.flowmusicxp.com.ar, y acepta plenamente y sin reservas cada uno de los presentes términos y condiciones, los cuales podrán ser modificados en todo o en parte únicamente por Flow Music XP.
+                            Los datos suministrados por el usuario para acceder al newsletter de Urbana, serán manejados por la plataforma de correos “MailChimp” cuyos términos y condiciones se expresan al momento de iniciar el registro para ello.
+                            Flow Music XP usa el servicio de “MailChimp”, un servicio prestado por The Rocket Science Group, LLC, por el cual El Usuario podrá recibir en el correo electrónico que facilite a The Rocket Science Group, LLC las actualizaciones de www.flowmusicxp.com.ar y otra información relacionada a la que se haya suscrito.
+                        </p>
+                        <h4>BASES DE DATOS E INFORMACIÓN</h4>
+                        <p>
+                            Atendiendo a lo reglamentado por la Ley 1581 de 2012 y el Decreto Reglamentario 1377 de 2013 con respecto al manejo de datos que ingresan los usuarios para recibir el newsletter que ofrece Flow Music XP entiende que sus usuarios le proporcionan datos de naturaleza personal relativos a nombre, apellidos y correo electrónico y que tienen carácter de confidenciales de acuerdo a lo expresado en los presentes términos y condiciones.
+                            El usuario conoce y acepta que los datos contenidos en el formulario para acceder al “newsletter” de www.flowmusicxp.com.ar, los cuales pueden ser utilizados para impulsar, dirigir, ejecutar y llevar a cabo campañas promocionales o concursos de carácter comercial o publicitario, por medio de e-mails o a través de cualquier medio de comunicación.
+                        </p> 
+                    </article>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary modalCerrar" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>     
     </footer>
     <script src="https://kit.fontawesome.com/0e19e091e9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
